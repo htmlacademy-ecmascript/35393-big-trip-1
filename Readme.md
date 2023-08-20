@@ -1,7 +1,7 @@
 # Проект «Большое путешествие»
 
 * Студент: [Ольга Артемова](https://up.htmlacademy.ru/ecmascript-individual/1/user/35393).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Галимов](https://htmlacademy.ru/profile/id1237543).
 
 ---
 
