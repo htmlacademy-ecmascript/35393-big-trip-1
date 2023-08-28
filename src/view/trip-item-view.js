@@ -8,29 +8,29 @@ const START_END_TIME = 'YYYY-MM-DD[T]HH:mm';
 const TIME_FORMAT = 'HH:mm';
 const IS_FAVORITE_CLASS = 'event__favorite-btn--active';
 
-function getActiveOffers(event) {
-  const activeOffers = [];
-
-  for (let i = 0; i < OFFERS.length; i++) {
-    if (OFFERS[i].type === event.type) {
-
-      event.offers.forEach((item) => {
-        for (let j = 0; j < OFFERS[i].offers.length; j++) {
-
-          if (OFFERS[i].offers[j].id === item) {
-            activeOffers[0] = OFFERS[i].offers[j];
-          }
-        }
-      });
-    }
-  }
-
-  if (activeOffers.length) {
-    return activeOffers;
-  } else {
-    return false;
-  }
-}
+// function getActiveOffers(event) {
+//   const activeOffers = [];
+//
+//   for (let i = 0; i < OFFERS.length; i++) {
+//     if (OFFERS[i].type === event.type) {
+//
+//       event.offers.forEach((item) => {
+//         for (let j = 0; j < OFFERS[i].offers.length; j++) {
+//
+//           if (OFFERS[i].offers[j].id === item) {
+//             activeOffers[0] = OFFERS[i].offers[j];
+//           }
+//         }
+//       });
+//     }
+//   }
+//
+//   if (activeOffers.length) {
+//     return activeOffers;
+//   } else {
+//     return false;
+//   }
+// }
 
 function getCurDestination(destination) {
   let dest;
