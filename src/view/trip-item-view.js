@@ -6,7 +6,7 @@ const DATE_FORMAT = 'MMM DD';
 const TIME_DATE_FORMAT = 'YYYY-MM-DD';
 const START_END_TIME = 'YYYY-MM-DD[T]HH:mm';
 const TIME_FORMAT = 'HH:mm';
-const IS_FAVORITE_CLASS = 'event__favorite-btn--active'
+const IS_FAVORITE_CLASS = 'event__favorite-btn--active';
 
 function getActiveOffers(event) {
   const activeOffers = [];
@@ -17,8 +17,9 @@ function getActiveOffers(event) {
       event.offers.forEach((item) => {
         for (let j = 0; j < OFFERS[i].offers.length; j++) {
 
-          if (OFFERS[i].offers[j].id === item)
+          if (OFFERS[i].offers[j].id === item) {
             activeOffers[0] = OFFERS[i].offers[j];
+          }
         }
       });
     }
@@ -57,8 +58,6 @@ function createTripItemTemplate(event) {
   const curDestination = getCurDestination(destination);
   const activeOffers = getActiveOffers(event);
   const highliterFavorite = event.isFavorite ? IS_FAVORITE_CLASS : '';
-
-  console.log(activeOffers);
 
   return (
     `<li class="trip-events__item">

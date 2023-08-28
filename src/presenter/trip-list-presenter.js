@@ -20,8 +20,6 @@ export default class TripListPresenter {
     render(this.tripListComponent, this.boardContainer);
     render(new EditTripForm(), this.tripListComponent.getElement());
 
-    console.log(this.boardEvents);
-
     for (let i = 0; i < this.boardEvents.length; i++) {
       render(new TripItemView({event: this.boardEvents[i]}), this.tripListComponent.getElement());
     }
