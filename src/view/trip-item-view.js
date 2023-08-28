@@ -56,7 +56,7 @@ function createTripItemTemplate(event) {
   const timeEnd = humanizeEventDate(event.dateTo, TIME_FORMAT);
   const duration = getDuration(timeStart, timeEnd);
   const curDestination = getCurDestination(destination);
-  const activeOffers = getActiveOffers(event);
+  // const activeOffers = getActiveOffers(event);
   const highliterFavorite = event.isFavorite ? IS_FAVORITE_CLASS : '';
 
   return (
